@@ -1,0 +1,44 @@
+.feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.feedback div {
+    align-items: center;
+}
+
+.feedback button {
+    width: 300px;
+    height: 60px;
+    padding: 0;
+    font-size: 24px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.email {
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.comment {
+    width: 600px;
+    height: 60px;
+    font-size: 18px;
+    padding-left: 10px;
+}

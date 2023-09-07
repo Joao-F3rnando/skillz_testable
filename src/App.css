@@ -1,0 +1,17 @@
+.app {
+  padding-bottom: 50px;
+}
+
+.forms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
