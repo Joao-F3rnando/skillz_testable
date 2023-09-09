@@ -4,9 +4,9 @@ import { Projeto } from './components/Projeto/Projeto'
 import { Comentarios } from './components/Comentarios/Comentarios'
 import { Feedback } from './components/Feedback/Feedback'
 
-const url = "http://localhost:8000"
+const url = "https://skillz-server-e79601f5f342.herokuapp.com/"
 const projects = [
-  { id: 1, title: 'Python', url: 'Projeto1.rar' },
+  { id: 1, title: 'Python - Em Desenvolvimento', url: 'Projeto1.rar' },
   { id: 2, title: 'JavaScript', url: 'Projeto2.rar' },
   { id: 3, title: 'HTML', url: 'Projeto3.rar' }]
 
