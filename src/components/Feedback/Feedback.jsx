@@ -23,8 +23,8 @@ export const Feedback = ({ url }) => {
     return (
         <div className='feedback'>
             <div className='inputs'>
-                <label>Email: <input className='email' type="email" value={email} onChange={(e) => setEmail(e.target.value)} /></label>
-                <label>Feedback: <input className='comment' type="text" value={feedback} onChange={(e) => setFeedback(e.target.value)} /></label>
+                <label>Email: <input className='email' required type="email" value={email} onChange={(e) => setEmail(e.target.value)} /></label>
+                <label>Feedback: <input className='comment' required type="text" value={feedback} onChange={(e) => setFeedback(e.target.value)} /></label>
             </div>
             <button onClick={() => handleSubmitFeedback()}>Enviar avaliação</button>
         </div>
