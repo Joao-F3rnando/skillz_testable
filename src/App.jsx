@@ -22,22 +22,6 @@ function App() {
     getInfos()
   }, [])
 
-  const handleSubmitFeedback = async () => {
-    const sendFeedback = {
-      email,
-      feedback
-    }
-
-    await fetch(`${url}/update`, {
-      method: 'POST',
-      headers: {
-        "content-type": "application/json"
-      },
-      body: JSON.stringify(sendFeedback)
-    })
-  }
-
-
   return (
     <div className='app'>
       <div className='forms'>

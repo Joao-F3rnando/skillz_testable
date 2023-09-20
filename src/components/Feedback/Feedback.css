@@ -29,6 +29,12 @@ label {
     gap: 20px;
 }
 
+input {
+    background-color: #2c2c2c;
+    border: 1px solid white;
+    color: white;
+}
+
 .email {
     width: 300px;
     height: 40px;
@@ -43,6 +49,12 @@ label {
     padding-left: 10px;
 }
 
-p{
-    color: antiquewhite;
+h4 {
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    .comment {
+        width: 300px;
+    }
 }

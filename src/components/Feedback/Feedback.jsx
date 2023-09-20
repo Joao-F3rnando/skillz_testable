@@ -7,14 +7,13 @@ export const Feedback = ({ url }) => {
     const [validate, setValidate] = useState(false)
 
     const handleSubmitFeedback = async () => {
-        if(email != '' && feedback != '')
-        {
+        if (email != '' && feedback != '') {
             setValidate(false)
             const sendFeedback = {
                 email,
                 feedback
             }
-    
+
             await fetch(`${url}/update`, {
                 method: 'POST',
                 headers: {
@@ -22,9 +21,9 @@ export const Feedback = ({ url }) => {
                 },
                 body: JSON.stringify(sendFeedback)
             })
+            window.location.reload()
         }
-        else
-        {
+        else {
             setValidate(true)
         }
     }
@@ -35,8 +34,8 @@ export const Feedback = ({ url }) => {
                 <label>Email: <input className='email' type="email" value={email} onChange={(e) => setEmail(e.target.value)} /></label>
                 <label>Feedback: <input className='comment' type="text" value={feedback} onChange={(e) => setFeedback(e.target.value)} /></label>
             </div>
-            {validate && <p>Email e Feedback devem ser preenchidos</p>}
             <button onClick={() => handleSubmitFeedback()}>Enviar avaliação</button>
+            {validate && <h4>Email e Feedback devem ser preenchidos</h4>}
         </div>
     )
 }
